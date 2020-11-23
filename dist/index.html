@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desert Adventure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #glCanvas {
+            border: 1px solid #00ff00;
+            background-color: #391D0C;
+        }
+
+        #infoModal {
+            position: absolute;
+            top: 250px;
+            left: 390px;
+            border: 1px solid #00ff00;
+            padding: 20px;
+            box-sizing: border-box;
+            width: 500px;
+            height: 220px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .small {
+            font-size: 10pt;
+        }
+
+        .btn {
+            border: 0;
+            border-radius: 5px;
+            padding: 12px;
+            color: #fff;
+            font-weight: bold;
+            background-color: #00aaff;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="infoModal">
+        <h1>Desert Adventure <span class="small">by Jacob Dachenhaus</span></h1>
+        <br>
+        <h2>Controls:</h2>
+        <p>Use WASD to move and SPACE to search crates for bananas.</p>
+        <p>Don't let Pedro catch you!</p>
+        <br>
+        <button type="button" class="btn" onclick="play()">Play Game</button>
+    </div>
+
+    <canvas id="glCanvas" width="1280" height="720"></canvas>
+
+    <script src="vendor/pixi.min.js"></script>
+    <script src="vendor/rot.min.js"></script>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
